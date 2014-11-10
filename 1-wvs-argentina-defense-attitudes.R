@@ -28,4 +28,12 @@ Data2 <- na.omit(Data2)
 
 M2 <- zelig(aims.defense ~ age + female + unemployed + satisfinancial + postma4 + respectauthority + nationalpride, model = "logit", data = Data2)
 
+M2.low <- setx(M2, respectauthority = -1, satisfinancial = 1:10)
+M2.high <- setx(M2, respectauthority = 1, satisfinancial = 1:10)
 
+M2.sim <- sim(M2, x = M2.low, x1 = M2.high)
+
+plot.ci(M2.sim, xlab = "Financial Satisfaction",
+         ylab = "Expected Value of Defense Being Most Important National Goal",
+         main = "Effect of Respect for Authority and Financial Satisfaction on Attitudes toward Defense",
+)
