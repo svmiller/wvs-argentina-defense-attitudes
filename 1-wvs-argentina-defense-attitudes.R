@@ -19,7 +19,7 @@ Data$z.respectauthority <- with(Data, (respectauthority - mean(respectauthority,
 
 # Compare coefficient magnitudes.
 
-M2 <- glm(aims.defense ~ age + female + unemployed + z.satisfinancial + z.postma4 + z.respectauthority + nationalpride, data=Data, family=binomial(link="logit"))
+M2 <- glm(aims.defense ~ z.age + female + unemployed + z.satisfinancial + z.postma4 + z.respectauthority + nationalpride, data=Data, family=binomial(link="logit"))
 summary(M2)
 
 # Zelig sims don't play well with missing data. Let's just subset what we want.
