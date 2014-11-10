@@ -14,4 +14,10 @@ Brief codebook (variable of origin in WVS in parentheses):
 - collegeed (x025): did respondent graduate from college?
 - female (x001): women = 1. men = 0
 - satisfinancial (c006): respondent's satisfaction with financial situation (1:10, 10 = most satisfied)
-
+- ideology (e033): ideology of respondent on left-right scale (1:10, 1 = most left. 10 = most right).
+- postma4 (y002): three-point post-materialism index (1 = post-materialist, 0 = mixed, -1 = materialist)
+- cai ((a039 + a029) - (a040 + a042)): child autonomy index (-2:2).
+- trustmostpeople (a165): 1 = most people can be trusted. 0 = can't be too careful.
+- respectauthority (e018): 1 = greater respect for authority as future change would be a good thing. 0 = neutral. -1 = bad thing.
+- godimportant (f063): importance of god to respondent on 1:10 scale (10 = most important)
+- nationalpride (g006): how proud is respondent of nationality (1 = very proud, 0 = proud, not very proud, not proud at all).
