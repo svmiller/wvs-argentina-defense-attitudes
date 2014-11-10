@@ -35,6 +35,7 @@ M3.high <- setx(M3, respectauthority = 1, satisfinancial = 1:10)
 M3.sim <- sim(M3, x = M3.low, x1 = M3.high)
 
 plot.ci(M3.sim, xlab = "Financial Satisfaction",
-         ylab = "Expected Value of Defense Being Most Important National Goal",
-         main = "Effect of Respect for Authority and Financial Satisfaction on Attitudes toward Defense",
+        ylab = "E(Defense Being Most Important National Goal)",
+        main = "Effect of Respect for Authority and Financial \n Satisfaction on Attitudes toward Defense",
+        ci=c(90,95)
 )
