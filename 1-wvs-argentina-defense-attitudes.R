@@ -39,3 +39,9 @@ plot.ci(M3.sim, xlab = "Financial Satisfaction",
         main = "Effect of Respect for Authority and Financial \n Satisfaction on Attitudes toward Defense",
         ci=c(90,95)
 )
+
+M3.low.2 <- setx(M3, respectauthority = -1)
+M3.high.2 <- setx(M3, respectauthority = 1)
+M3.sim.2 <- sim(M3, x = M3.low.2, x1 = M3.high.2)
+
+summary(M3.sim.2)
